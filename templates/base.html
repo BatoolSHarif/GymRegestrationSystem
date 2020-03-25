@@ -1,0 +1,207 @@
+{%load static%}
+{% load i18n %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IronMuscle &mdash; Colorlib Website Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500"> 
+    <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css'%}">
+
+    <link rel="stylesheet" href="{%static  'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{%static  'css/magnific-popup.css'%}">
+    <link rel="stylesheet" href="{%static  'css/jquery-ui.css'%}">
+    <link rel="stylesheet" href="{%static  'css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css '%}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css'%}">
+    <link rel="stylesheet" href="{% static 'css/animate.css'%}">
+    
+    
+    <link rel="stylesheet" href="% static 'fonts/flaticon/font/flaticon.css'%}">
+  
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    
+  </head>
+  <body>
+  
+
+  <div class="site-wrap">
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+    <div class="site-navbar-wrap bg-white">
+      <div class="site-navbar-top">
+        <div class="container py-2">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <a href="#" class="p-2 pl-0"><span class="icon-twitter"></span></a>
+              <a href="#" class="p-2 pl-0"><span class="icon-facebook"></span></a>
+              <a href="#" class="p-2 pl-0"><span class="icon-linkedin"></span></a>
+              <a href="#" class="p-2 pl-0"><span class="icon-instagram"></span></a>
+            </div>
+            <div class="col-6">
+              <div class="d-flex ml-auto">
+                <a href="#" class="d-flex align-items-center ml-auto mr-4">
+                  <span class="icon-envelope mr-2"></span>  
+                  <span class="d-none d-md-inline-block">gum@domain.com</span>
+                </a>
+                <a href="tel://12912830302" class="d-flex align-items-center">
+                  <span class="icon-phone mr-2"></span>
+                  <span class="d-none d-md-inline-block">077-345-9348</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-navbar-wrap bg-white">
+      
+      <div class="container">
+        <div class="site-navbar bg-light">
+          <div class="py-1">
+            <div class="row align-items-center">
+              <div class="col-2">
+                <h2 class="mb-0 site-logo"><a href="{% url 'base_url'%}">Gym<strong>Regisrtation</strong>  </a></h2>
+              </div>
+              <div class="col-10">
+                <nav class="site-navigation text-right" role="navigation">
+                  <div class="container">
+                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+                    <ul class="site-menu js-clone-nav d-none d-lg-block">
+                      <li class="active">
+                        welcome {{ request.user }}
+                        <a href="{% url 'base_url'%}">Home</a><a href="{% url 'user_url'%}">Registration</a>
+                        <a href="{% url 'sub_url'%}">Subsribtion</a>
+                        <a href="{% url 'transaction_url'%}">Transaction</a>
+                        <a href="{% url 'visit_url'%}">Visits</a>
+                      </li>
+                     
+                      
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+     
+      
+
+    </div>
+<br><br><br><br>
+
+   
+{%block page_customer%}
+{%endblock%}
+
+{%block  page_sub%}
+{%endblock%}
+
+{%block  page_visit%}
+{%endblock%}
+    
+{%block page_trans%}
+{%endblock%}
+
+{%block page_index%}
+
+{%endblock%}
+
+<br><br><br><br><br><br><br><br>
+<!-- <div class="site-blocks-cover inner-page overlay" style="background-image: url('{% static "images/hero_bg_2.jpg"%}')";> 
+  <center><br><br><br><br><br><br><br><br><br><h1>Get In Shape &amp; Be <strong>Healthy</strong></h1></center>
+    <div class="container"> 
+  </div>
+</div> -->
+
+    <footer class="site-footer">
+      <div class="container">
+         <div class="row">
+          <div class="col-lg-7">
+            <div class="row">
+              <!-- <div class="col-6 col-md-4 col-lg-8 mb-5 mb-lg-0">
+                <h3 class="footer-heading mb-4 text-primary">About</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat amet sint vel impedit reprehenderit eius expedita nemo consequatur obcaecati aperiam, blanditiis quia iste in! Assumenda, odio?</p>
+                <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p>
+              </div> -->
+              <div class="col-6 col-md-4 col-lg-4 mb-5 mb-lg-0">
+                <h3 class="footer-heading mb-4 text-primary">Quick Menu</h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">Home</a></li>    
+                  <li><a href="#">Subsribtion</a></li>
+                  <li><a href="#">Transaction</a></li>
+                  <li><a href="#">Visits</a></li>
+                  <li><a href="#">Registration</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="row mb-5">
+              <div class="col-md-12"><h3 class="footer-heading mb-4 text-primary">Contact Info</h3></div>
+              <div class="col-md-6">
+                <p>Jordan - 2398 <br> 10 Makkah Street</p> 
+              </div>
+              <div class="col-md-6">
+                Tel. + (00962) 77-345-9348 <br>
+                Mail. gum@youdomain.com
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12"><h3 class="footer-heading mb-4 text-primary">Social Icons</h3></div>
+              <div class="col-md-12">
+                <p>
+                  <a href="#" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
+                  <a href="#" class="p-2"><span class="icon-twitter"></span></a>
+                  <a href="#" class="p-2"><span class="icon-instagram"></span></a>
+                  <a href="#" class="p-2"><span class="icon-vimeo"></span></a>
+
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+         
+          
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="% static 'js/jquery-3.3.1.min.js'%}"></script>
+  <script src="% static 'js/jquery-migrate-3.0.1.min.js'%}"></script>
+  <script src="% static 'js/jquery-ui.js'%}"></script>
+  <script src="% static 'js/popper.min.js'%}"></script>
+  <script src="% static 'js/bootstrap.min.js'%}"></script>
+  <script src="% static 'js/owl.carousel.min.js'%}"></script>
+  <script src="% static 'js/jquery.stellar.min.js'%}"></script>
+  <script src="% static 'js/jquery.countdown.min.js'%}"></script>
+  <script src="% static 'js/jquery.magnific-popup.min.js'%}"></script>
+  <script src="% static 'js/bootstrap-datepicker.min.js'%}"></script>
+  <script src="% static 'js/aos.js'%}"></script>
+
+  <script src="% static 'js/main.js'%}"></script>
+    
+  </body>
+</html>
